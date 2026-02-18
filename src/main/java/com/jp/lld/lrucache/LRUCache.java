@@ -2,6 +2,8 @@ package com.jp.lld.lrucache;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class LRUCache<K, V> {
 
