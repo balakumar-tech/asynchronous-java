@@ -24,4 +24,11 @@ public class ParkingLot {
         this.parkingStrategy = new BestFitStrategy();
         this.activeTickets = new ConcurrentHashMap<>();
     }
+
+    public static synchronized ParkingLot getInstance() {
+        if(instance  == null) {
+            instance = new ParkingLot();
+        }
+        return instance;
+    }
 }
