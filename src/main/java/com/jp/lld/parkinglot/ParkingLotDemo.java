@@ -55,7 +55,7 @@ public class ParkingLotDemo {
             String licenseNumber = carTicket
                             .get().getVehicle().getLicenseNumber();
             Optional<Double> parkingFee =  parkingLot.unparkVehicle(licenseNumber);
-            System.out.println("Fee for "+licenseNumber+": is $"+parkingFee.get());
+            System.out.println("Fee for "+licenseNumber+": is $"+parkingFee);
         }
 
         /*if(truckTicket.isPresent()) {
